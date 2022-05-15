@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" th:href="@{css/principal.css}">
+	<script th:src="@{js/teste.js}"> </script>
+    <title>Sobre - World of Sneakers</title>
+
+</head>
+<body>
+   	 <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a th:href="@{/home}"><img th:src="@{img/tiger.png}" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a th:href="@{/home}">Home</a></li>
+                    <li><a th:href="@{/produtos}">Produtos</a></li>
+                    <li><a th:href="@{/sobre}">Sobre</a></li>
+                    <li><a th:href="@{/contatos}">Contatos</a></li>
+                    <li><a th:href="@{/conta}">Conta</a></li>
+                </ul>
+            </nav>
+            <a th:href="@{/carrinho}"><img th:src="@{img/cart.png}" width="30px" height="30px"></a>
+            <!-- <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> -->
+        </div>
+    </div>
+   	
+            
+</body>
+</html>

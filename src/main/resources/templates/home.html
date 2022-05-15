@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" th:href="@{css/principal.css}">
+		<script th:src="@{js/teste.js}"> 
+		</script>
+		<title>World of Sneakers</title>
+</head>
+
+<body>
+		<!-- <h1>Seja bem vindo ao World of Sneakers</h1>
+		<button th:onclick="ola()">OK</button>
+		<img th:src="@{img/mustang-wallpaper.jpg}">  -->
+		
+		
+	<div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a th:href="@{/home}"><img th:src="@{img/tiger.png}" width="125px"></a>
+                </div>
+                <nav>
+                	<ul id="MenuItems">
+                    <li><a th:href="@{/home}">Home</a></li>
+                    <li><a th:href="@{/produtos}">Produtos</a></li>
+                    <li><a th:href="@{/sobre}">Sobre</a></li>
+                    <li><a th:href="@{/contatos}">Contatos</a></li>
+                    <li><a th:href="@{/conta}">Conta</a></li>
+                </ul>
+                </nav>
+                <a th:href="@{/carrinho}"><img th:src="@{img/cart.png}" width="30px" height="30px"></a>
+                <!--  <img th:src="@{img/menu.png}" class="menu-icon" th:onclick="menutoggle()"> -->
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Um Novo Estilo de Treino<br> Somente Seu!</h1>
+                    <p>O sucesso nem sempre se trata de grandeza. � uma quest�o de consist�ncia.<br> O trabalho �rduo consistente obt�m sucesso. A grandeza vir�!</p>
+                    <a  class="btn">Explore Agora &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img th:src="@{img/jordanHeader.png}">
+                </div>
+            </div>
+        </div>
+    </div>
+		
+</body>
+</html>
