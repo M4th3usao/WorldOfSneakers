@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" th:href="@{css/principal.css}">
+		<script th:src="@{js/teste.js}"> 
+		</script>
+		<title>World of Sneakers</title>
+</head>
+<body>
+	<form th:action="@{calcsomar}" method="POST" th:object="${calc}">
+	N1: <input type="number" th:field="*{n1}"><br>
+	N2: <input type="number" th:field="*{n2}"><br>
+	<input type="submit" value="Calcular">
+	
+	</form>
+</body>

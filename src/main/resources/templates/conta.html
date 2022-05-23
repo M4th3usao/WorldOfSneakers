@@ -28,5 +28,10 @@
     </div>
    	
             
+       <form th:action="@{cliente}" method="POST" th:object="${cli}">
+			Nome: <input type="text" th:field="*{nome}"><br>
+			CPF: <input type="text" th:field="*{cpf}"><br>
+			<input type="submit" value="Cadastrar">	
+		</form>
 </body>
 </html>
